@@ -20,6 +20,10 @@ header {
     background-color: #FFF75E;
 }
 
+#original-img {
+    display: none;
+}
+
 h1 {
     font-size: 40px;
     font-weight: 700;
@@ -114,7 +118,7 @@ h2 {
     margin: 4px;
     font-size: 30px;
     font-weight: initial;
-    letter-spacing: -;
+    /* letter-spacing: -; */
 }
 
 .item5 p:nth-child(3) {
