@@ -3,6 +3,33 @@ body {
     width: 75%
 }
 
+.top {
+    width: 100%;
+    height: 60px;
+    background-color: aliceblue;
+    text-align: center;
+    align-items: center;
+}
+
+button {
+    margin: 10px auto;
+    padding: 10px 15px;
+    font-weight: bolder;
+}
+
+#original {
+    display: none;
+    align-items: center;
+    background-color: transparent;
+}
+
+#solimo-can {
+    display: inline-block;
+    position: relative;
+    border: 5px solid antiquewhite;
+    box-shadow: 2px 2px 5px #666;
+}
+
 main {
     display: grid;
     grid: 80px repeat(3, 125px) 250px 80px / repeat(5, 1fr);
