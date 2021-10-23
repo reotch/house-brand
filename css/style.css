@@ -1,8 +1,9 @@
 body {
     margin: 0 auto;
-    width: 75%
+    width: 75%;
 }
 
+/* -----[ORIGINAL IMAGE TOGGLER]----- */
 .top {
     width: 100%;
     height: 60px;
@@ -30,25 +31,25 @@ button {
     box-shadow: 2px 2px 5px #666;
 }
 
+#original-img {
+    display: none;
+}
+
+/* -----[GRID]----- */
 main {
     display: grid;
     grid: 80px repeat(3, 125px) 250px 80px / repeat(5, 1fr);
-    /* grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(7, 1fr); this will need adjustment */
     gap: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* -----[GRID ELEMENTS]----- */
 header {
     /* grid-row: 1;
     grid-column: 2 / span 3; */
     grid-area: 1 / 2 / 2 / 5;
     height: 100%;
     background-color: #FFF75E;
-}
-
-#original-img {
-    display: none;
 }
 
 h1 {
@@ -126,8 +127,6 @@ h2 {
     margin: 5px 0;
     letter-spacing: -2px;
     font-weight: 700;
-    /* transform: scale(.5, 1); */
-    align-items: inherit;
 }
 
 .item4 P:nth-child(4) {
@@ -145,7 +144,6 @@ h2 {
     margin: 4px;
     font-size: 30px;
     font-weight: initial;
-    /* letter-spacing: -; */
 }
 
 .item5 p:nth-child(3) {
@@ -164,7 +162,7 @@ h2 {
 div {
     /* grid-column: 1;
     grid-row: 1 / 6; */
-    grid-area: 1 / 1 / 8 / 2;
+    grid-area: 1 / 1 / -1 / 2;
     background-color: antiquewhite;
 }
 
@@ -180,14 +178,14 @@ span {
 aside {
     /* grid-column: 5;
     grid-row: 1 / 8; */
-    grid-area: 1 / 5 / 8 / 6;
+    grid-area: 1 / 5 / -1 / 6;
     background-color: #FFFBAB;
 }
 
 footer {
     /* grid-row: -2;
     grid-column: 2 / span 3; */
-    grid-area: -1 / 2 / -2 / 5;
+    grid-area: 6 / 2 / -1 / 5;
     height: 100%;
     background-color: #FFF75E;
 }
